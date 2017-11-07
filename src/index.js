@@ -11,11 +11,10 @@ function single(iterable) {
     return {
       value: x.value,
       get next() {
-        if(typeof(this.__next) === 'undefined') {
-          this.__next = createItem(iter.next());
-        }
-
-        return this.__next;
+        const n = createItem(iter.next());
+        delete this.next;
+        this.next = n;
+        return n;
       }
     }
   }
