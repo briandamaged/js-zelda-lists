@@ -8,7 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/briandamaged/node-zelda-lists.git"
+    "url": "git+ssh://git@github.com/briandamaged/js-zelda-lists.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "linked",
@@ -17,9 +20,9 @@
   "author": "Brian Lauber",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/briandamaged/node-zelda-lists/issues"
+    "url": "https://github.com/briandamaged/js-zelda-lists/issues"
   },
-  "homepage": "https://github.com/briandamaged/node-zelda-lists#readme",
+  "homepage": "https://github.com/briandamaged/js-zelda-lists#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^4.0.1"
