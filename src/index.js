@@ -1,5 +1,6 @@
 
 
+// Converts iterable into a singly-linked list
 function single(iterable) {
   const iter = iterable[Symbol.iterator]();
 
@@ -21,6 +22,5 @@ function single(iterable) {
 
   return createItem(iter.next());
 }
-
 
 module.exports = exports = single;
