@@ -1,4 +1,5 @@
 
+const { injectLazyGetter } = require('lazy-getter');
 
 // Converts iterable into a singly-linked list
 function single(iterable) {
@@ -9,15 +10,12 @@ function single(iterable) {
       return null;
     }
 
-    return {
-      value: x.value,
-      get next() {
-        const n = createItem(iter.next());
-        delete this.next;
-        this.next = n;
-        return n;
-      }
-    }
+    const node = {value: x.value};
+    injectLazyGetter(node, "next", function() {
+      return createItem(iter.next());
+    });
+
+    return node;
   }
 
   return createItem(iter.next());
