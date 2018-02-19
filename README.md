@@ -1,5 +1,7 @@
 # Zelda Lists #
 
+[![npm version](https://badge.fury.io/js/zelda-lists.svg)](https://badge.fury.io/js/zelda-lists) [![GitHub version](https://badge.fury.io/gh/briandamaged%2Fnode-zelda-lists.svg)](https://badge.fury.io/gh/briandamaged%2Fnode-zelda-lists)
+
 Starring Link...ed lists!
 
 ## Installation ##
